@@ -35,7 +35,7 @@ class ReadFilter:
         while True:
             dat = stream.read(2)
             if len(dat) < 2:
-                print("Run out of data - exiting.")
+                print(f"Run out of data ({len(dat)} bytes remaining) - exiting.")
                 sys.exit()
             msb = dat[0] - A
             lsb = dat[1] - A

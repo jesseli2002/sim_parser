@@ -157,7 +157,7 @@ class SimReadParser:
             )
 
         data = self.stdout.read(length)
-        print("Handling radio")
+        print("Handling radio ==========================================")
         # self._xbee.recieved_from_rocket(data)
 
     def _handleAnalogRead(self):
